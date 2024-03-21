@@ -1,0 +1,52 @@
+.tw-followCar{
+    display: flex;
+    align-items: center;
+    & .tw-followCar--header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & .tw-followCar--info{
+            display: flex;
+            flex-direction: column;
+
+            & .tw-followCar--info--name{
+                color: #fff;
+            }
+
+            & .tw-followCar--info--user {
+                color: gray;
+                opacity: .6;
+            }
+        }
+    }
+    
+    & .tw-followCar--img{
+        width: 48px;
+        height: 48px;
+        border-radius: 1000px;
+    }
+
+    & .tw-followCar--aside {
+        & .tw-followCar--aside--followButton{
+            margin-left: 16px;
+            border: 0px;
+            border-radius: 999px;
+            padding: 6px 16px;
+            font-weight: bold;
+            border: 1px solid #000;
+            transition: all linear .3s;
+            cursor: pointer;
+
+            &.tw-followCar--aside--followButton:hover{
+                opacity: .6;
+            }
+
+            &.tw-followCar--aside--followButton.isFollowing {
+                border: 1px solid red;
+                background: #7e3030a9;
+                color: red;
+            }
+        }
+    }
+}
